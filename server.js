@@ -14,10 +14,10 @@ const image = require('./controllers/image')
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'M4rshm4||0w',
-      database : 'face_recognition'
+      host : 'postgresql-dimensional-55586',
+      user : 'kmmyahggruxcsv',
+      password : '',
+      database : ''
     }
   });
 
