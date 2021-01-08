@@ -26,7 +26,8 @@ const handleRegister = (req, res, db, saltRounds, bcrypt) => {
         .then(trx.commit)
         .catch(trx.rollback)
     }).catch(err => {
-        res.status(400).json('Unable to register')
+        res.status(400).json(err)
+        console.log(err)
     })
 }
 
